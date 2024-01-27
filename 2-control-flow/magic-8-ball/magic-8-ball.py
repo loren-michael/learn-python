@@ -1,38 +1,53 @@
 # Magic 8-Ball 🎱
-# Galina Podstrechnaya
+# Loren Hartman
 
 import random
 
-playerName = "Galina"
-playerQuestion = "Will there be any more snowfall in New York for winter 2020? ❄️" 
+name = ""
+question = ""
+answer = ""
 
-randomNumber = random.randint(1, 9)
-# print(randomNumber)
+random_number = random.randint(1, 9)
+# print(random_number)
 
-if randomNumber == 1:
-  eightBall = "Yes - definitely"
-elif randomNumber == 2:
-  eightBall = "It is decidedly so"
-elif randomNumber == 3:
-  eightBall = "Without a doubt"
-elif randomNumber == 4:
-  eightBall = "Reply hazy, try again"
-elif randomNumber == 5:
-  eightBall = "Ask again later"
-elif randomNumber == 6:
-  eightBall = "Better not tell you now"
-elif randomNumber == 7:
-  eightBall = "My sources say no"
-elif randomNumber == 8:
-  eightBall = "Outlook not so good"
-elif randomNumber == 9:
-  eightBall = "Very doubtful"
+if question.strip() == "":
+  print("You need to ask a question first!")
 else:
-  eightBall = "Error"
+  if name == "":
+    print("Question: " + question)
+  else:
+    print(name + " asks: " + question)
 
-print(playerName, "\'s Question:", playerQuestion)
+  
+if question != "":
+  if random_number == 1:
+    answer = "Yes - definitely"
+    print("Magic 8-Ball's answer: " + answer)
+  elif random_number == 2:
+    answer = "It is decidedly so"
+    print("Magic 8-Ball's answer: " + answer)
+  elif random_number == 3:
+    answer = "Without a doubt"
+    print("Magic 8-Ball's answer: " + answer)
+  elif random_number == 4:
+    answer = "Reply hazy, try again"
+    print("Magic 8-Ball's answer: " + answer)
+  elif random_number == 5:
+    answer = "Ask again later"
+    print("Magic 8-Ball's answer: " + answer)
+  elif random_number == 6:
+    answer = "Better not tell you now"
+    print("Magic 8-Ball's answer: " + answer)
+  elif random_number == 7:
+    answer = "My sources say no"
+    print("Magic 8-Ball's answer: " + answer)
+  elif random_number == 8:
+    answer = "Outlook not so good"
+    print("Magic 8-Ball's answer: " + answer)
+  elif random_number == 9:
+    answer = "Very doubtful"
+    print("Magic 8-Ball's answer: " + answer)
+  else:
+    answer = "Error"
 
-# Challenge:
-# playerName.isEmpty ? print("Question: \(playerQuestion)") : print("\(playerName) asks: \(playerQuestion)")
-
-print("🎱:", eightBall)
+# print("Magic 8-Ball's answer: " + answer)

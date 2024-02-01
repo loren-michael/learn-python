@@ -82,5 +82,3 @@ print(divisible_by_ten(20))
 print(divisible_by_ten(25))
 # should print False
 
-
-
